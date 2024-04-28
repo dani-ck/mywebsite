@@ -11,13 +11,19 @@
       height: 100vh; /* Full viewport height */
       margin: 0; /* Remove default margin */
     }
+    img {
+      max-width: 100%; /* Prevent image from overflowing */
+      height: auto; /* Maintain aspect ratio */
+    }
   </style>
   <script src="script.js"></script>
  <link rel="stylesheet" type="text/css" href="style.css">
  <script src="script.js"></script>
 </head>
 <body>
- <h1>If you are seeing this WELCOME. I am alive</h1>
-  <img src="https://files.thewonkeydonkey.ie/TWD.PNG" alt="TWDLOGO" style="max-width: 50%; height: auto;" />
+  <div>
+    <img src="https://files.thewonkeydonkey.ie/TWD.PNG" alt="TWDLOGO" style="max-width: 50%; height: auto;" />
+    <h1>If you are seeing this WELCOME. I am alive</h1>
+  </div>
 </body>
 </html>
