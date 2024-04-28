@@ -4,30 +4,61 @@
   <title>Dani C Clancy</title>
   <style>
     body {
-      background-color: #000000; /* Black background */
-      color: #FFFFFF; /* White text */
-      display: flex; /* Enable flexbox layout */
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
-      height: 100vh; /* Full viewport height */
-      margin: 0; /* Remove default margin */
+      background-color: #FFFFFF; /* White background */
+      color: #000000; /* Black text */
+      margin: 0; /* No default margin */
+      padding: 0; /* No default padding */
+      font-family: Arial, sans-serif; /* Default font */
     }
 
-    div {
-      text-align: center; /* Center-align text */
+    /* Navigation bar styling */
+    .navbar {
+      display: flex; /* Enable flex layout */
+      justify-content: space-around; /* Spread items evenly */
+      background-color: #333333; /* Dark background for nav bar */
+      padding: 10px; /* Padding for spacing */
+      position: fixed; /* Keep the nav bar at the top */
+      width: 100%; /* Full width */
+      top: 0; /* Position at the top */
     }
-  
+
+    .navbar a {
+      color: white; /* White text on dark background */
+      text-decoration: none; /* Remove underline */
+      padding: 10px; /* Padding for spacing */
+      font-weight: bold; /* Bold text */
+    }
+
+    .navbar a:hover {
+      background-color: #555555; /* Change background on hover */
+    }
+
+    /* Main content styling */
+    .content {
+      padding-top: 60px; /* Padding to account for fixed nav bar */
+      text-align: center; /* Center-align text */
+      height: 100vh; /* Full viewport height */
+      display: flex; /* Enable flex layout */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+    }
+
     img {
-      max-width: 100%; /* Prevent image from overflowing */
+      max-width: 100%; /* Ensure image doesn't overflow */
       height: auto; /* Maintain aspect ratio */
     }
   </style>
-  <!-- Remove duplicate script -->
 </head>
 <body>
-  <div>
-    <img src="https://files.thewonkeydonkey.ie/TWD.PNG" alt="TWDLOGO" /> <!-- Centered image -->
-    <h1>If you are seeing this WELCOME. I am alive</h1> <!-- Centered text -->
+  <div class="navbar">
+    <a href="#home">Home</a> <!-- Link to Home section -->
+    <a href="#bio">Bio</a> <!-- Link to Bio section -->
+    <a href="#projects">Projects</a> <!-- Link to Projects section -->
+  </div>
+
+  <div class="content">
+    <img src="https://files.thewonkeydonkey.ie/TWD.PNG" alt="TWDLOGO" />
+    <h1>If you are seeing this, WELCOME. I am alive</h1>
   </div>
 </body>
 </html>
