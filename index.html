@@ -13,12 +13,13 @@
     /* Navigation bar styling */
     .navbar {
       display: flex; /* Enable flex layout */
-      justify-content: space-around; /* Space links evenly */
+      justify-content: space-around; /* Evenly spaced links */
       background-color: #333333; /* Dark background for nav bar */
       padding: 10px; /* Padding for spacing */
-      position: fixed; /* Keep nav bar at the top */
+      position: fixed; /* Fix at the top */
       width: 100%; /* Full width */
       top: 0; /* Position at the top */
+      z-index: 1; /* Ensure nav bar is on top */
     }
 
     .navbar a {
@@ -29,16 +30,17 @@
     }
 
     .navbar a:hover {
-      background-color: #555555; /* Change background on hover */
+      background-color: #555555; /* Hover background */
     }
 
     /* Main content styling */
     .content {
-      position: relative; /* Relative positioning for absolute child */
-      height: 80vh; /* Full viewport height */
+      padding-top: 60px; /* Padding to avoid nav bar overlap */
       display: flex; /* Enable flex layout */
+      flex-direction: column; /* Stack items vertically */
       justify-content: center; /* Center horizontally */
       align-items: center; /* Center vertically */
+      height: 100vh; /* Full viewport height */
     }
 
     img {
@@ -47,9 +49,8 @@
     }
 
     .overlay-text {
-      position: absolute; /* Position absolutely within the relative parent */
-      color: white; /* White text for contrast */
-      text-align: center; /* Center text */
+      color: #000000; /* Black text */
+      text-align: center; /* Center-align text */
       font-size: 24px; /* Increase font size for visibility */
     }
   </style>
@@ -62,9 +63,9 @@
   </div>
 
   <div class="content">
-    <img src="https://files.thewonkeydonkey.ie/TWD.PNG" alt="TWDLOGO" /> <!-- Centered image -->
+    <img src="https://files.thewonkeydonkey.ie/TWD.PNG" alt="TWDLOGO" /> <!-- Image below nav bar -->
     <div class="overlay-text">
-      <h1>If you are seeing this, WELCOME. I am alive</h1> <!-- Centered text over image -->
+      <h1>If you are seeing this, WELCOME. I am alive</h1> <!-- Centered text below nav bar -->
     </div>
   </div>
 </body>
